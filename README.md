@@ -1,16 +1,46 @@
-# React + Vite
+# Online Library System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This is an **Online Library System** built using **React, React Router, Redux, and Tailwind CSS**.  
+Users can browse books by category, search by title/author, view detailed information, and add new books to the library.  
+The application is fully responsive and visually appealing with Tailwind styling.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Home Page**
+   - Welcome message
+   - Categories (Fiction, Non-Fiction, Sci-Fi, History)
+   - Popular books displayed as cards with link to details
 
-## Expanding the ESLint configuration
+2. **Browse Books Page**
+   - Dynamic routing for categories 
+   - Search books by title or author
+   - Responsive book grid
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Book Details Page**
+   - Displays book title, author, description, rating
+   - Back to Browse button
+
+4. **Add Book Page**
+   - Form to add a new book
+   - Form validation (all fields required, rating 0–5)
+   - Redux integration to store book list
+   - Redirect to Browse Books page after adding
+
+5. **404 Page**
+   - Displays invalid route URL
+   - Link back to Home
+   - No Navbar shown
+
+6. **Styling & UX**
+   - Tailwind CSS used for responsive and visually appealing design
+   - Hover effects, spacing, shadows, and focus effects
+
+
+## Github repositories link
+  - https://github.com/vikashrao12/Online-Library
+
+## Author
+  Vikash Raw

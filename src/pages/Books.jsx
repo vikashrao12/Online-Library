@@ -1,19 +1,20 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 import BookCard from "../components/BookCard.jsx";
-import studentBooks from "../data/booksData.js";
 
 export default function Books() {
-
   const { category } = useParams();
-
-
   const [search, setSearch] = useState("");
 
 
+  const students = useSelector((state) => state.books.books);
+
+
   let filteredBooks = category
-    ? studentBooks.filter((student) => student.category.toLowerCase() === category.toLowerCase())
-    : studentBooks;
+    ? students.filter((student) => student.category.toLowerCase() === category.toLowerCase())
+    : students;
+
 
   if (search.trim() !== "") {
     filteredBooks = filteredBooks.filter(
@@ -25,10 +26,7 @@ export default function Books() {
 
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-4">
-        {category ? `${category} Books` : "All Books"}
-      </h1>
-
+      <h1 className="text-3xl font-bold mb-4">{category ? `${category} Books` : "All Books"}</h1>
 
       <input
         type="text"

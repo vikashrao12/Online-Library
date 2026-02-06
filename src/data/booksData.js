@@ -4,6 +4,9 @@ const studentBooks = [
   { id: 2, title: "Sapiens", author: "Yuval Noah Harari", category: "Non-Fiction", description: "A brief history of humankind.", rating: 4.8 },
   { id: 3, title: "Dune", author: "Frank Herbert", category: "Sci-Fi", description: "An epic science fiction adventure.", rating: 4.7 },
   { id: 4, title: "1984", author: "George Orwell", category: "Fiction", description: "A dystopian novel about surveillance and freedom.", rating: 4.6 },
+  { id: 5, title: "The Wright Brothers", author: "David McCullough", category: "History", description: "The story of the pioneers of aviation.", rating: 4.4 },
+  { id: 6, title: "Educated", author: "Tara Westover", category: "Non-Fiction", description: "A memoir about overcoming adversity through education.", rating: 4.7 },
+  { id: 7, title: "The Martian", author: "Andy Weir", category: "Sci-Fi", description: "A gripping tale of survival on Mars.", rating: 4.6 },
 ];
 
 export default studentBooks;

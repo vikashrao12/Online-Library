@@ -24,7 +24,7 @@ export default function BookDetails() {
   }
 
   return (
-    <div className="p-6 max-w-3xl mx-auto">
+    <div className="p-6 max-w-3xl mx-auto bg-white rounded shadow-md m-10">
       <h1 className="text-3xl font-bold mb-2">{student.title}</h1>
       <p className="text-gray-600 mb-2">Author: {student.author}</p>
       <p className="text-gray-500 mb-4">Category: {student.category}</p>

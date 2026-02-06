@@ -53,7 +53,7 @@ export default function AddBook() {
 
       {error && <p className="text-red-600 mb-4">{error}</p>}
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4 bg-white p-6 rounded shadow-md">
         <input
           type="text"
           placeholder="Title"

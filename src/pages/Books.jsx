@@ -4,13 +4,13 @@ import BookCard from "../components/BookCard.jsx";
 import studentBooks from "../data/booksData.js";
 
 export default function Books() {
-  // Get category from URL 
+
   const { category } = useParams();
 
-  // State for search bar
+
   const [search, setSearch] = useState("");
 
-  // Filter books by category first
+
   let filteredBooks = category
     ? studentBooks.filter((student) => student.category.toLowerCase() === category.toLowerCase())
     : studentBooks;
